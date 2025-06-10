@@ -11,14 +11,17 @@
  get_commission - возвращает комиссию маркетплейса: 
  15
 
- get_packs(collection_id) - возвращает паки коллекции по id:
+ get_packs(collection_id) - возвращает паки коллекции по id: 
  [{id: <pack_id>, name: <pack_name>, logo: <logo_url>, lottie: <banner_url>}, ...]
 
 get_offers(collection_id, res_length_limit, offset, sort_type) - возвращает предметы из коллекции, выставленные на продажу
+
 res_length_limit - количество паков в результате
 offset - "отступ". при offset 40 будет пропущено 40 первых стоящих на продаже паков
 sort_type - например price_asc
+
 {offers: [{id: <offer_id>, price: <price>, token: {"token_id": <collecrion_id>-<pack_id>-<item_id>, pack_id: <pack_id>, instance: <item_id>}}, ...], has_more: <True/False>}
+
 
 get_collections - возвращает доступные коллекции
 [{id: <collecrion_id>, name: <collecrion_name>, logo: <logo_url>, cover: <неизвестно>}, ...]
