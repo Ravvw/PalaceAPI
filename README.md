@@ -19,6 +19,7 @@ get_offers(collection_id, res_length_limit, offset, sort_type) - возвращ�
 res_length_limit - количество паков в результате
 
 offset - "отступ". при offset 40 будет пропущено 40 первых стоящих на продаже паков
+
 sort_type - например price_asc
 
 {offers: [{id: <offer_id>, price: <price>, token: {"token_id": <collecrion_id>-<pack_id>-<item_id>, pack_id: <pack_id>, instance: <item_id>}}, ...], has_more: <True/False>}
