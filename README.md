@@ -17,6 +17,7 @@
 get_offers(collection_id, res_length_limit, offset, sort_type) - возвращает предметы из коллекции, выставленные на продажу
 
 res_length_limit - количество паков в результате
+
 offset - "отступ". при offset 40 будет пропущено 40 первых стоящих на продаже паков
 sort_type - например price_asc
 
